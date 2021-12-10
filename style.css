@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.page-actions-cont{
+    height: 3rem;
+    background-color: #218c74;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 1rem;
+}
+.page-action{
+    margin: 0.5rem;
+    color: #f1f2f6;
+    cursor: pointer;
+}
+.cellprop-actions-cont{
+    height: 3rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    
+}
+.cellprop-actions-cont > *{
+
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.cellprop-actions-cont > select{
+    border: none;
+    border-radius: .2rem;
+    outline: none;
+}
+.font-family-prop{
+    padding: .1rem;
+}
+.font-size-prop{
+    padding: .1rem;
+}
+.formula-action-cont{
+    height: 2rem;
+    background-color: #ecf0f1;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.formula-action-cont >*{
+    display: inline-block;
+    margin: .4rem;
+    
+}
+.formula-action-cont > input{
+    height: 70%;
+    border: none;
+    outline: none;
+}
+.address-bar{
+    width: 5rem;
+    text-align: center;
+}
+.formula-bar{
+    width: calc(100vw - 5vw - 1rem - .7rem);
+}
+.formula-icon{
+    width:1.2rem;
+}
+.sheet-actions-cont{
+    height: 3rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    gap: 1rem;    
+}
+.sheet-actions-cont > *{
+    display: inline-block;
+}
+.sheet-add-icon{
+    width: 2vw;
+}
+.sheets-folder-cont{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: calc(100vw - 2vw);
+}
+.sheet-folder{
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+    font-size: .9rem;
+}
+.grid-cont{
+    height: calc( 100vh - 3rem - 3rem - 2rem - 3rem);
+    position: relative;
+    overflow: auto;
+    background-color: #ecf0f1;
+    
+}
+.top-left-dummy-box{
+height: 2rem;
+width: 2rem;
+background-color: #747d8c;
+position: fixed;
+z-index: 6;
+
+}
+.address-col-cont{
+    position: sticky;
+    top: 2rem;
+    left: 0;
+    /* z-index: 3; */
+}
+.address-col{
+height: 2rem;
+width: 2rem;
+text-align: center;
+border: 1px solid #dfe4ea;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.address-row-cont{
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 2rem;
+    z-index: 4;
+}
+
+.cells-cont{
+    position: absolute;
+    top: 0;
+    left: 2rem;
+ 
+}
+.address-row{
+    height: 2rem;
+    min-width: 5rem;
+    text-align: center;
+    border: 1px solid #dfe4ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.rowNo{
+    height: 2rem; 
+    width: calc(100vw - 2rem);
+    display: flex;
+}
+.cellno{
+    height: 2rem;
+    min-width: 5rem;
+    text-align: center;
+    border: 1px solid #dfe4ea;
+    outline: none;
+}
+/* ???????????????????color-picker css??????????????????????????/ */
+
+.color-prop{
+position: relative;
+}
+
+.color-prop > input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    }
